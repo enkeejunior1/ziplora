@@ -930,6 +930,7 @@ def main(args):
                 "Make sure to install wandb if you want to use it for logging during training."
             )
         import wandb
+        wandb.login()
 
     # Make one log on every process with the configuration for debugging.
     logging.basicConfig(
